@@ -61,7 +61,10 @@
             <formatter type="xml"/>
             <test name="CipherPackage.TestUser" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <!--<classpath refid="CipherTest.classpath"/>-->
+            <classpath>
+              <path refid="CipherTest.classpath" />
+              <pathelement location="../../../Users/Александр/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+            </classpath>
         </junit>
     </target>
     <target name="junitreport">
